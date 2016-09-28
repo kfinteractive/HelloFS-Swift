@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F429E10D1D9BA34A00A03080 /* HelloFSFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429E10C1D9BA34A00A03080 /* HelloFSFileSystem.swift */; };
+		F429E10E1D9BA44200A03080 /* OSXFUSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A9A2F81D9BA19800A67475 /* OSXFUSE.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F4A9A2E91D9BA15300A67475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A9A2E81D9BA15300A67475 /* AppDelegate.swift */; };
+		F4A9A2ED1D9BA15300A67475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A9A2EC1D9BA15300A67475 /* Assets.xcassets */; };
+		F4A9A2F01D9BA15300A67475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A9A2EE1D9BA15300A67475 /* Main.storyboard */; };
+		F4A9A2FD1D9BA1D400A67475 /* Fuse.icns in Resources */ = {isa = PBXBuildFile; fileRef = F4A9A2FB1D9BA1D400A67475 /* Fuse.icns */; };
+		F4A9A2FE1D9BA1D400A67475 /* hellodoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = F4A9A2FC1D9BA1D400A67475 /* hellodoc.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F429E10C1D9BA34A00A03080 /* HelloFSFileSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloFSFileSystem.swift; sourceTree = "<group>"; };
+		F4A9A2E51D9BA15300A67475 /* HelloFS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloFS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A9A2E81D9BA15300A67475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4A9A2EC1D9BA15300A67475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4A9A2EF1D9BA15300A67475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4A9A2F11D9BA15300A67475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A9A2F81D9BA19800A67475 /* OSXFUSE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSXFUSE.framework; path = ../../../../Library/Frameworks/OSXFUSE.framework; sourceTree = "<group>"; };
+		F4A9A2FB1D9BA1D400A67475 /* Fuse.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Fuse.icns; sourceTree = "<group>"; };
+		F4A9A2FC1D9BA1D400A67475 /* hellodoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = hellodoc.icns; sourceTree = "<group>"; };
+		F4A9A2FF1D9BA29600A67475 /* HelloFS-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloFS-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4A9A2E21D9BA15300A67475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F429E10E1D9BA44200A03080 /* OSXFUSE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4A9A2DC1D9BA15300A67475 = {
+			isa = PBXGroup;
+			children = (
+				F4A9A2F71D9BA18900A67475 /* Frameworks */,
+				F4A9A2E71D9BA15300A67475 /* HelloFS-Swift */,
+				F4A9A2E61D9BA15300A67475 /* Products */,
+				F4A9A2FA1D9BA1D400A67475 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F4A9A2E61D9BA15300A67475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4A9A2E51D9BA15300A67475 /* HelloFS-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4A9A2E71D9BA15300A67475 /* HelloFS-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F4A9A2E81D9BA15300A67475 /* AppDelegate.swift */,
+				F4A9A2EC1D9BA15300A67475 /* Assets.xcassets */,
+				F4A9A2FF1D9BA29600A67475 /* HelloFS-Swift-Bridging-Header.h */,
+				F429E10C1D9BA34A00A03080 /* HelloFSFileSystem.swift */,
+				F4A9A2F11D9BA15300A67475 /* Info.plist */,
+				F4A9A2EE1D9BA15300A67475 /* Main.storyboard */,
+			);
+			path = "HelloFS-Swift";
+			sourceTree = "<group>";
+		};
+		F4A9A2F71D9BA18900A67475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A9A2F81D9BA19800A67475 /* OSXFUSE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A9A2FA1D9BA1D400A67475 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4A9A2FB1D9BA1D400A67475 /* Fuse.icns */,
+				F4A9A2FC1D9BA1D400A67475 /* hellodoc.icns */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4A9A2E41D9BA15300A67475 /* HelloFS-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A9A2F41D9BA15300A67475 /* Build configuration list for PBXNativeTarget "HelloFS-Swift" */;
+			buildPhases = (
+				F4A9A2E11D9BA15300A67475 /* Sources */,
+				F4A9A2E21D9BA15300A67475 /* Frameworks */,
+				F4A9A2E31D9BA15300A67475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HelloFS-Swift";
+			productName = "HelloFS-Swift";
+			productReference = F4A9A2E51D9BA15300A67475 /* HelloFS-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4A9A2DD1D9BA15300A67475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					F4A9A2E41D9BA15300A67475 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F4A9A2E01D9BA15300A67475 /* Build configuration list for PBXProject "HelloFS-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4A9A2DC1D9BA15300A67475;
+			productRefGroup = F4A9A2E61D9BA15300A67475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4A9A2E41D9BA15300A67475 /* HelloFS-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4A9A2E31D9BA15300A67475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A9A2FD1D9BA1D400A67475 /* Fuse.icns in Resources */,
+				F4A9A2ED1D9BA15300A67475 /* Assets.xcassets in Resources */,
+				F4A9A2FE1D9BA1D400A67475 /* hellodoc.icns in Resources */,
+				F4A9A2F01D9BA15300A67475 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4A9A2E11D9BA15300A67475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F429E10D1D9BA34A00A03080 /* HelloFSFileSystem.swift in Sources */,
+				F4A9A2E91D9BA15300A67475 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4A9A2EE1D9BA15300A67475 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A9A2EF1D9BA15300A67475 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4A9A2F21D9BA15300A67475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4A9A2F31D9BA15300A67475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F4A9A2F51D9BA15300A67475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "HelloFS-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.HelloFS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloFS-Swift/HelloFS-Swift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4A9A2F61D9BA15300A67475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "HelloFS-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.HelloFS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloFS-Swift/HelloFS-Swift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4A9A2E01D9BA15300A67475 /* Build configuration list for PBXProject "HelloFS-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A9A2F21D9BA15300A67475 /* Debug */,
+				F4A9A2F31D9BA15300A67475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A9A2F41D9BA15300A67475 /* Build configuration list for PBXNativeTarget "HelloFS-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A9A2F51D9BA15300A67475 /* Debug */,
+				F4A9A2F61D9BA15300A67475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4A9A2DD1D9BA15300A67475 /* Project object */;
+}
