@@ -28,7 +28,7 @@ class HelloFSFileSystem: NSObject {
     // MARK: - optional Custom Icon
 
     override func finderAttributes(atPath path: String!) throws -> [AnyHashable : Any] {
-        guard path == helloPath else { throw NSError() }
+        guard path == helloPath else { throw NSError(domain: NSCocoaErrorDomain, code: Int(ENOATTR)) }
 
         let finderFlags = NSNumber(value: hasCustomIcon)
         return [kGMUserFileSystemFinderFlagsKey: finderFlags]
